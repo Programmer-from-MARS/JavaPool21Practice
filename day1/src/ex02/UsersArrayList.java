@@ -37,7 +37,7 @@ public class UsersArrayList implements UsersList{
     }
 
     public User getArrayId(int id) {
-        for (int i = 0; i < arraySize; i++)
+        for (int i = 0; i < usersCount; i++)
         {
             if (id == usersArray[i].getID())
                 return usersArray[i];

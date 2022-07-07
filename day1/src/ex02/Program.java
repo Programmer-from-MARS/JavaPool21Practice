@@ -4,7 +4,7 @@ public class Program {
     enum    Operation   {debit, credit};
 
     public static void main(String[] args) {
-	    User Max = new User("Max", 21000);
+        User Max = new User("Max", 21000);
         User Igor = new User("Igor", 42000);
         User Max2 = new User("MAX", 50);
         User Bob = new User("Bob", 100000);
@@ -17,14 +17,8 @@ public class Program {
             userList.usersArray[i]. printNewUserInfo();
         userList.getIndex(1).printNewUserInfo();
         userList.getArrayId(3).printNewUserInfo();
-        try
-        {
-            userList.getArrayId(6);
-        }
-        catch (UserNotFoundException e)
-        {
-            System.out.println(e.getMessage());
-        }
-
+        try { userList.getArrayId(6).printNewUserInfo(); }
+        catch (UserNotFoundException e) { System.out.printf("%s\n", e.getMessage()); }
     }
 }
+
